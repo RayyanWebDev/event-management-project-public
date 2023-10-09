@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Firebase/AuthProvider";
 
 const SignUp = () => {
   const { createUser } = useContext(AuthContext);
+  const [passwordValidation, setPasswordValidation] = useState();
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -11,6 +12,7 @@ const SignUp = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     console.log(name, email, password);
+
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
@@ -18,6 +20,12 @@ const SignUp = () => {
       .catch((error) => {
         console.log(error);
       });
+  };
+  const handlePasswordValidation = (password) => {
+    if (!/^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password)) {
+      setPasswordValidation("PassWord must be at least 6 characters");
+      return;
+    }
   };
 
   return (
@@ -49,6 +57,7 @@ const SignUp = () => {
                 className="input input-bordered bg-zinc-700 text-white"
                 required
               />
+              <p></p>
             </div>
             <div className="form-control ">
               <input
@@ -58,9 +67,16 @@ const SignUp = () => {
                 className="input input-bordered bg-zinc-700 text-white"
                 required
               />
+
+              <p className="text-white">{passwordValidation}</p>
             </div>
             <div className="form-control mt-6">
-              <button className="btn but btn-primary">Sign Up</button>
+              <button
+                onClick={handlePasswordValidation}
+                className="btn but btn-primary"
+              >
+                Sign Up
+              </button>
             </div>
           </form>
           <p className="mt-14 mb-14">
@@ -76,7 +92,7 @@ const SignUp = () => {
 };
 
 export default SignUp;
-// import React, { useContext, useState } from "react";
+
 // import { AuthContext } from "../Firebase/AuthProvider";
 
 // const SignUp = () => {

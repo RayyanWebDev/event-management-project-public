@@ -90,7 +90,8 @@ const Header = () => {
         <div>
           {user ? (
             <>
-              <span>{user.email}</span>
+              <span>{user.displayName}</span>
+              <img className="rounded" src={user.photoURL} alt="" />
               <button onClick={handleLogOut}>Sign Out</button>
             </>
           ) : (
