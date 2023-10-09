@@ -4,41 +4,47 @@
     "name": "Streaming",
     "image": "https://i.ibb.co/18RNNcR/istockphoto-1317797291-1024x1024.jpg",
     "price": 19.99,
-    "description": "Instantly watch a vast library of content over the internet."
+    "description": "Instantly watch a vast library of content over the internet.",
+    "details": "Our streaming service offers an unparalleled online movie experience, providing instant access to a vast library of content over the internet. With high-quality video and audio streaming, viewers can enjoy a wide variety of movies, TV shows, and exclusive content from the comfort of their homes. Whether you're a film enthusiast or just looking for a relaxing evening of entertainment, our streaming service delivers the best in cinematic enjoyment, right at your fingertips. Join us for an immersive and convenient viewing experience that caters to your every entertainment need."
   },
   {
     "id": 2,
     "name": "Personalized Recommendations",
     "image": "https://i.ibb.co/myF1xqg/istockphoto-1220178723-1024x1024.jpg",
     "price": 29.99,
-    "description": "Tailored movie and show suggestions based on your preferences."
+    "description": "Tailored movie and show suggestions based on your preferences.",
+    "details": "Elevate your online movie experience with our Personalized Recommendations feature. Tailored to your unique preferences, it sifts through our extensive catalog to suggest movies and TV shows you're bound to adore. Based on your viewing history, it unveils hidden gems and new favorites, ensuring each selection feels handpicked for you. Discover a world of entertainment crafted just for your tastes, making every viewing session a delightful journey of cinematic exploration."
   },
   {
     "id": 3,
     "name": "Offline Downloads",
     "image": "https://i.ibb.co/MNSPmV8/istockphoto-1208363215-1024x1024.jpg",
     "price": 24.95,
-    "description": "Download select content for on-the-go, no internet needed."
+    "description": "Download select content for on-the-go, no internet needed.",
+    "details": "Unlock the convenience of Offline Downloads with our online movie website. Now, you can take your favorite films and TV shows on-the-go, even without an internet connection. Simply download content to your device and enjoy uninterrupted entertainment during travel, commutes, or in areas with limited connectivity. It's the perfect solution for those seeking flexibility and the freedom to watch anytime, anywhere. Experience the joy of portable cinema with Offline Downloads."
   },
   {
     "id": 4,
     "name": "Multiple Devices",
     "image": "https://i.ibb.co/120vH5J/istockphoto-1412892932-1024x1024.jpg",
     "price": 14.99,
-    "description": " Watch on various devices, from smartphones to smart TVs."
+    "description": "Watch on various devices, from smartphones to smart TVs.",
+    "details": "Experience the ultimate flexibility with our Multiple Devices feature. Whether you prefer to watch on your smartphone, tablet, computer, or smart TV, we've got you covered. Seamlessly switch between devices and access your favorite movies and TV shows wherever you are. No matter your device of choice, enjoy the same high-quality content and immersive viewing experience. With Multiple Devices, your entertainment is never bound by limitations, making it easier than ever to indulge in cinematic bliss across your entire tech arsenal."
   },
   {
     "id": 5,
     "name": "Original Content",
     "image": "https://i.ibb.co/z45GpFH/istockphoto-1284319449-1024x1024.jpg",
     "price": 39.95,
-    "description": "Exclusive, acclaimed movies and shows produced by CineHub."
+    "description": "Exclusive, acclaimed movies and shows produced by CineHub.",
+    "details": "Dive into a world of exclusive entertainment with our Original Content offerings. Featuring acclaimed movies and shows produced by our platform, you'll be captivated by top-notch storytelling, exceptional performances, and innovative narratives. Our Original Content is a testament to our commitment to delivering fresh, unique, and captivating experiences that you won't find anywhere else. Immerse yourself in a realm of cinematic creativity and exploration, where every title is a masterpiece waiting to be discovered."
   },
   {
     "id": 6,
     "name": "Ad-Free Experience",
     "image": "https://i.ibb.co/3kyVd1s/istockphoto-497251882-1024x1024.jpg",
     "price": 49.99,
-    "description": "Watch content without interruptions or advertisements for a seamless experience."
+    "description": "Watch content without interruptions or advertisements for a seamless experience.",
+    "details": "Elevate your viewing pleasure with our Ad-Free Experience. Bid farewell to interruptions and commercials, and immerse yourself in a seamless, uninterrupted world of entertainment. Enjoy your favorite movies and TV shows without the distractions of ads, ensuring a truly immersive and engrossing cinematic journey. Our Ad-Free Experience is designed to provide you with uninterrupted enjoyment, letting you focus on what matters most – the content itself. Say goodbye to disruptions and hello to uninterrupted entertainment."
   }
 ]
