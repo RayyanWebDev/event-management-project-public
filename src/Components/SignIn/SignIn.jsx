@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../Firebase/AuthProvider";
 
 const SignIn = () => {
-  const { signInUser } = useContext(AuthContext);
+  const { signInUser, signInWithGoogle } = useContext(AuthContext);
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -13,6 +13,16 @@ const SignIn = () => {
     signInUser(email, password)
       .then((result) => {
         console.log(result);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  const hangleGoogle = () => {
+    signInWithGoogle()
+      .then((result) => {
+        console.log(result.user);
       })
       .catch((error) => {
         console.log(error);
@@ -60,6 +70,11 @@ const SignIn = () => {
               {" "}
               <button className="text-white">Sign Up Now</button>
             </Link>
+          </p>
+          <p>
+            <button onClick={hangleGoogle} className="btn">
+              Google
+            </button>
           </p>
         </div>
       </div>

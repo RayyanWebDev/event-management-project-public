@@ -11,6 +11,7 @@ import SignIn from "./Components/SignIn/SignIn";
 import Page404 from "./Components/Page404/Page404";
 import AuthProvider, { AuthContext } from "./Components/Firebase/AuthProvider";
 import SignUp from "./Components/SignUp/SignUp";
+import ServiceDetails from "./Components/ServiceDetails/ServiceDetails";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
       {
         path: "/SignUp",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "/service/:id",
+        element: <ServiceDetails></ServiceDetails>,
+        loader: () => fetch("../movie.json"),
       },
       {
         path: "/404",
