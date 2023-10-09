@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Firebase/AuthProvider";
 
 const Header = () => {
-  const { user } = useState(AuthContext);
-  console.log(user);
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        console.log("Logged Out ");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const NavLists = (
     <>
@@ -26,9 +34,6 @@ const Header = () => {
       <div className="nav-sign-in ml-96">
         <ul>
           {" "}
-          <li>
-            <NavLink to="/SignIn">SIGN IN</NavLink>
-          </li>
           <li>
             <NavLink to="/SignUp">SIGN UP</NavLink>
           </li>
@@ -78,6 +83,18 @@ const Header = () => {
               <li className="Navlists grid grid-cols-4  ">{NavLists}</li>
             </ul>
           </ul>
+        </div>
+        <div>
+          {user ? (
+            <>
+              <span>{user.email}</span>
+              <button onClick={handleLogOut}>Sign Out</button>
+            </>
+          ) : (
+            <Link to="/SignIn">
+              <button>Sign In</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
