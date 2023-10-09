@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Movies = () => {
   return (
@@ -10,7 +11,8 @@ const Movies = () => {
             alt=""
           />
         </div>
-        <h3 className="text-4xl font-bold mt-14 mb-14">TV-Programmes</h3>
+
+        <h3 className="text-4xl font-bold mt-14 mb-14">Movies</h3>
         <div
           className="flex
          gap-4 marque mb-14"
@@ -27,7 +29,7 @@ const Movies = () => {
           />
           <img
             className="w-80 h-44"
-            src="https://i.ibb.co/N1Gq90J/wallpaperflare-com-wallpaper-25.jpg"
+            src="https://i.ibb.co/pLxDQX1/wallpaperflare-com-wallpaper-29.jpg"
             alt=""
           />
           <img
@@ -42,7 +44,7 @@ const Movies = () => {
           />
           <img
             className="w-96 h-44"
-            src="https://i.ibb.co/RHJ4mgC/wallpaperflare-com-wallpaper-26.jpg"
+            src="https://i.ibb.co/N1Gq90J/wallpaperflare-com-wallpaper-25.jpg"
             alt=""
           />
           <img
@@ -51,9 +53,16 @@ const Movies = () => {
             alt=""
           />
         </div>
+
+        <Link to="/movieSynopsis">
+          <div className="flex justify-center mx-auto mb-14">
+            <button className="btn but btn-primary">Read Movie Synopsis</button>
+          </div>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default Movies;
+//

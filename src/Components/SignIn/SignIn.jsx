@@ -62,20 +62,17 @@ const SignIn = () => {
             <div className="form-control mt-6">
               <button className="btn but btn-primary">Sign In</button>
             </div>
-            <button className="btn but btn-primary">Sign In with Google</button>
-          </form>
-          <p className="mt-14 mb-14">
-            <span className="text-zinc-400"> New to CineHub?</span>{" "}
-            <Link to="/SignUp">
-              {" "}
-              <button className="text-white">Sign Up Now</button>
-            </Link>
-          </p>
-          <p>
-            <button onClick={hangleGoogle} className="btn">
-              Google
+            <button onClick={hangleGoogle} className="btn but btn-primary">
+              Sign In with Google
             </button>
-          </p>
+            <p className="mt-14 mb-14">
+              <span className="text-zinc-400"> New to CineHub?</span>{" "}
+              <Link to="/SignUp">
+                {" "}
+                <button className="text-white">Sign Up Now</button>
+              </Link>
+            </p>
+          </form>
         </div>
       </div>
     </div>
@@ -83,7 +80,7 @@ const SignIn = () => {
 };
 
 export default SignIn;
-// import React, { useContext, useState } from "react";
+
 // import { AuthContext } from "../Firebase/AuthProvider";
 
 // const SignIn = () => {

@@ -12,6 +12,9 @@ import Page404 from "./Components/Page404/Page404";
 import AuthProvider, { AuthContext } from "./Components/Firebase/AuthProvider";
 import SignUp from "./Components/SignUp/SignUp";
 import ServiceDetails from "./Components/ServiceDetails/ServiceDetails";
+import PrivateRoutes from "./routes/PrivateRoutes";
+import MoviesSynopsis from "./Components/MovieSynopsis/MoviesSynopsis";
+import FavouriteTvShows from "./Components/FavouriteTvShows/FavouriteTvShows";
 
 const router = createBrowserRouter([
   {
@@ -40,8 +43,28 @@ const router = createBrowserRouter([
         element: <SignUp></SignUp>,
       },
       {
+        path: "/movieSynopsis",
+        element: (
+          <PrivateRoutes>
+            <MoviesSynopsis></MoviesSynopsis>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/favouriteTvShows",
+        element: (
+          <PrivateRoutes>
+            <FavouriteTvShows></FavouriteTvShows>
+          </PrivateRoutes>
+        ),
+      },
+      {
         path: "/service/:id",
-        element: <ServiceDetails></ServiceDetails>,
+        element: (
+          <PrivateRoutes>
+            <ServiceDetails></ServiceDetails>
+          </PrivateRoutes>
+        ),
         loader: () => fetch("../movie.json"),
       },
       {

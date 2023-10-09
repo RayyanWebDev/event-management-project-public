@@ -21,24 +21,27 @@ const Header = () => {
           <li>
             <NavLink to="/">HOME</NavLink>
           </li>
+        </ul>
+
+        <ul>
           <li>
             <NavLink to="/movies">MOVIES</NavLink>
           </li>
+        </ul>
 
+        <ul>
           <li>
             <NavLink to="/TvShows">TV SHOWS</NavLink>
           </li>
         </ul>
-      </div>
-
-      <div className="nav-sign-in ml-96">
         <ul>
-          {" "}
-          <li>
+          <li className="w-24">
             <NavLink to="/SignUp">SIGN UP</NavLink>
           </li>
         </ul>
       </div>
+
+      <div className="nav-sign-in   w-24"></div>
     </>
   );
   return (
@@ -64,7 +67,7 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
+              className="menu menu-sm dropdown-content mt-3  p-2  w-52 "
             >
               <ul>
                 <li>{NavLists}</li>
@@ -92,7 +95,7 @@ const Header = () => {
             </>
           ) : (
             <Link to="/SignIn">
-              <button>Sign In</button>
+              <button className="w-24">Sign In</button>
             </Link>
           )}
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TVshows = () => {
   return (
@@ -51,6 +52,13 @@ const TVshows = () => {
             alt=""
           />
         </div>
+        <Link to="/favouriteTvShows">
+          <div className="flex justify-center mx-auto mb-14">
+            <button className="btn but btn-primary">
+              All Times Favourites
+            </button>
+          </div>
+        </Link>
       </div>
     </div>
   );
