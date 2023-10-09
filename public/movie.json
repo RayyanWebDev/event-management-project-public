@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Streaming",
+    "image": "https://i.ibb.co/18RNNcR/istockphoto-1317797291-1024x1024.jpg",
+    "price": 19.99,
+    "description": "Instantly watch a vast library of content over the internet."
+  },
+  {
+    "id": 2,
+    "name": "Personalized Recommendations",
+    "image": "https://i.ibb.co/myF1xqg/istockphoto-1220178723-1024x1024.jpg",
+    "price": 29.99,
+    "description": "Tailored movie and show suggestions based on your preferences."
+  },
+  {
+    "id": 3,
+    "name": "Offline Downloads",
+    "image": "https://i.ibb.co/MNSPmV8/istockphoto-1208363215-1024x1024.jpg",
+    "price": 24.95,
+    "description": "Download select content for on-the-go, no internet needed."
+  },
+  {
+    "id": 4,
+    "name": "Multiple Devices",
+    "image": "https://i.ibb.co/120vH5J/istockphoto-1412892932-1024x1024.jpg",
+    "price": 14.99,
+    "description": " Watch on various devices, from smartphones to smart TVs."
+  },
+  {
+    "id": 5,
+    "name": "Original Content",
+    "image": "https://i.ibb.co/z45GpFH/istockphoto-1284319449-1024x1024.jpg",
+    "price": 39.95,
+    "description": "Exclusive, acclaimed movies and shows produced by CineHub."
+  },
+  {
+    "id": 6,
+    "name": "Ad-Free Experience",
+    "image": "https://i.ibb.co/3kyVd1s/istockphoto-497251882-1024x1024.jpg",
+    "price": 49.99,
+    "description": "Watch content without interruptions or advertisements for a seamless experience."
+  }
+]

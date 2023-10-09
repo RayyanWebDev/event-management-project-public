@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Manrope:wght@500;600;800&family=Open+Sans:wght@500&display=swap");
+
+body {
+  /* background-color: black; */
+  font-family: "Lato", sans-serif, "Manrope", sans-serif, "Open Sans",
+    sans-serif;
+}
+.Navlists:hover {
+  color: brown;
+}
+.nav-sign-in {
+  /* margin-left: 96px; */
+}
+.but {
+  background-color: rgb(211, 0, 51);
+}
+.texr-s {
+  color: rgb(226, 68, 94);
+}
+.marque1 {
+  overflow: hidden;
+}
+.marque {
+  animation: marquee 50s linear infinite;
+  animation-play-state: running;
+}
+@keyframes marquee {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
