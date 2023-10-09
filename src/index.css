@@ -36,3 +36,7 @@ body {
     transform: translate3d(-50%, 0, 0);
   }
 }
+.sign-out-button {
+  color: brown;
+  font-weight: bold;
+}

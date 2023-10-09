@@ -70,7 +70,7 @@ const Header = () => {
               className="menu menu-sm dropdown-content mt-3  p-2  w-52 "
             >
               <ul>
-                <li>{NavLists}</li>
+                <li className="text-red-400 font-medium">{NavLists}</li>
               </ul>
             </ul>
           </div>
@@ -83,7 +83,9 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex  w-8/12">
           <ul className="menu menu-horizontal px-1 ">
             <ul>
-              <li className="Navlists grid grid-cols-4  ">{NavLists}</li>
+              <li className="Navlists grid grid-cols-4 font-medium text-red-400 ">
+                {NavLists}
+              </li>
             </ul>
           </ul>
         </div>
@@ -92,7 +94,9 @@ const Header = () => {
             <>
               <span>{user.displayName}</span>
               <img className="rounded" src={user.photoURL} alt="" />
-              <button onClick={handleLogOut}>Sign Out</button>
+              <button className="sign-out-button" onClick={handleLogOut}>
+                Sign Out
+              </button>
             </>
           ) : (
             <Link to="/SignIn">

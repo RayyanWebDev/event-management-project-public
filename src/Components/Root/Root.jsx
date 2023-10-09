@@ -6,9 +6,11 @@ import Header from "../Header/Header";
 const Root = () => {
   return (
     <div>
-      <Header></Header>
+      <div className="bg-black">
+        <Header></Header>
 
-      <Outlet></Outlet>
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </div>
   );
